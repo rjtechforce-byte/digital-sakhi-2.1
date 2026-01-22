@@ -59,6 +59,7 @@ const ExamPage = () => {
     const speak = (text, optionIndex = null) => {
       return new Promise((resolve) => {
         const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = "hi-IN";
         utterance.rate = 0.9;
 
         if (optionIndex !== null) {
