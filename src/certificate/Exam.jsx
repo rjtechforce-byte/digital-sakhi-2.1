@@ -114,7 +114,7 @@ const ExamPage = () => {
     const fetchQuestions = async () => {
       try {
         const res = await axios.get(
-          "https://digital-sakhi-backend-4-rapv.onrender.com//api/exam/questions"
+          "https://digital-sakhi-backend-4-rapv.onrender.com/api/exam/questions"
         );
         setQuestions(res.data.questions);
       } catch (err) {
