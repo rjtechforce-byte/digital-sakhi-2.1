@@ -28,7 +28,7 @@ const ResultPage = () => {
     const fetchResult = async () => {
       try {
         const res = await axios.get(
-          `https://digital-sakhi-backend-4.onrender.com/api/exam/result/${submitId}`
+          `https://digital-sakhi-backend-4-rapv.onrender.com/api/exam/result/${submitId}`
         );
 
         if (!res.data || !res.data.result) {
@@ -57,7 +57,7 @@ const ResultPage = () => {
       setGenerating(true);
 
       const res = await axios.post(
-        "https://digital-sakhi-backend-4.onrender.com/api/certificate/generate",
+        "https://digital-sakhi-backend-4-rapv.onrender.com/api/certificate/generate",
         { userId, examId }
       );
 
